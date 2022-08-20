@@ -1,0 +1,15 @@
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\bin\Debug\net6.0\Northwind.Common.DataContext.SqlServer.deps.json
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\bin\Debug\net6.0\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\bin\Debug\net6.0\ref\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\bin\Debug\net6.0\Northwind.Common.DataContext.SqlServer.pdb
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\bin\Debug\net6.0\Northwind.Common.EntityModels.SqlServer.dll
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\bin\Debug\net6.0\Northwind.Common.EntityModels.SqlServer.pdb
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.csproj.AssemblyReference.cache
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.AssemblyInfoInputs.cache
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.AssemblyInfo.cs
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.csproj.CoreCompileInputs.cache
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.csproj.CopyComplete
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\ref\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\mlk_s\source\repos\Northwind\Northwind.Common.DataContext.SqlServer\obj\Debug\net6.0\Northwind.Common.DataContext.SqlServer.pdb

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3593b1da-0085-48be-a315-1cd8449b67a6": {
+      "ProjectGuid": "3593b1da-0085-48be-a315-1cd8449b67a6",
+      "DisplayName": "Northwind.WebApi",
+      "ColorIndex": 0
+    },
+    "3e02d5c3-2295-4d64-bca8-c695b9da8902": {
+      "ProjectGuid": "3e02d5c3-2295-4d64-bca8-c695b9da8902",
+      "DisplayName": "Northwind.Common.EntityModels.SqlServer",
+      "ColorIndex": 1
+    },
+    "22db4a3d-d85b-476b-85af-5aab00e2a08d": {
+      "ProjectGuid": "22db4a3d-d85b-476b-85af-5aab00e2a08d",
+      "DisplayName": "Northwind.Common.DataContext.SqlServer",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
