@@ -93,7 +93,7 @@ public class CustomersController : Controller
     }
 
     //Delete
-    [HttpPut("{id}")]
+    [HttpDelete("{id}")]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
