@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityMode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", "..\Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{22DB4A3D-D85B-476B-85AF-5AAB00E2A08D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc", "Northwind.Mvc\Northwind.Mvc.csproj", "{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{22DB4A3D-D85B-476B-85AF-5AAB00E2A08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22DB4A3D-D85B-476B-85AF-5AAB00E2A08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DB4A3D-D85B-476B-85AF-5AAB00E2A08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

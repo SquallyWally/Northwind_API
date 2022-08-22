@@ -63,13 +63,11 @@ public class CustomersController : Controller
         {
             return BadRequest("Something went to create a customer from the repository ");
         }
-        else
-        {
-            return CreatedAtRoute(
-                routeName: nameof(GetCustomer),
-                routeValues: new {id = addedCustomer.CustomerId.ToLower()},
-                value: addedCustomer);
-        }
+
+        return CreatedAtRoute(
+            routeName: nameof(GetCustomer),
+            routeValues: new {id = addedCustomer.CustomerId.ToLower()},
+            value: addedCustomer);
     }
 
     //Update
@@ -121,9 +119,7 @@ public class CustomersController : Controller
         {
             return new NoContentResult();
         }
-        else
-        {
-            return BadRequest($"Customer {id} was found but failed to delete.");
-        }
+
+        return BadRequest($"Customer {id} was found but failed to delete.");
     }
 }
