@@ -1,0 +1,18 @@
+﻿@model Northwind.Common.EntityModels.SqlServer.Category?
+
+@{
+    ViewData["Title"] = "Category Detail - " + Model?.CategoryName;
+}
+
+<h2>Category Name</h2>
+<hr/>
+<div>
+    <dl class="d1-horizontal">
+        <dt>Category Id</dt>
+        <dd>@Model!.CategoryId</dd>
+        <dt>Category Name</dt>
+        <dd>@Model.CategoryName</dd>
+        <dt>Category Description</dt>
+        <dd>@Model.Description</dd>
+    </dl>
+</div>

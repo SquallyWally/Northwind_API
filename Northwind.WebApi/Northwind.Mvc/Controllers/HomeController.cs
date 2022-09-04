@@ -48,14 +48,14 @@ public class HomeController : Controller
         return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
     }
 
-    public IActionResult ProductDetail(int? id)
+    public async Task<IActionResult> ProductDetail(int? id)
     {
         if (!id.HasValue)
         {
             return BadRequest("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
         }
 
-        Product? model = _db.Products.SingleOrDefault(p => p.ProductId == id);
+        Product? model = await _db.Products.SingleOrDefaultAsync(p => p.ProductId == id);
 
         if (model == null)
         {
@@ -84,6 +84,36 @@ public class HomeController : Controller
         }
 
         ViewData["MaxPrice"] = price.Value.ToString("C");
+        return View(model);
+    }
+    
+    [Route("category")]
+    public async Task<IActionResult> Categories()
+    {
+        IEnumerable<Category> model = await _db.Categories.ToListAsync();
+        if (!model.Any())
+        {
+            return NotFound("There are no Categories");
+        }
+        
+        return View(model);
+    }
+
+    [Route("category/{id:int}")]
+    public async Task<IActionResult> CategoryDetail(int? id)
+    {
+        if (!id.HasValue)
+        {
+            return BadRequest("You must pass a category ID in the route, for example, /category/2");
+        }
+
+        Category? model = await _db.Categories.SingleOrDefaultAsync(c => c.CategoryId == id);
+
+        if (model == null)
+        {
+            return NotFound($"CategoryId {id} not found.");
+        }
+
         return View(model);
     }
 }

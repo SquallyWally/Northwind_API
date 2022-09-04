@@ -1,0 +1,35 @@
+﻿@using Northwind.Common.EntityModels.SqlServer
+@model System.Collections.Generic.IEnumerable<Northwind.Common.EntityModels.SqlServer.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h2>Categories</h2>
+@if (Model is null)
+{
+    <div>No categories found.</div>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Category Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (Category c in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-controller="Home" asp-action="CategoryDetail" asp-route-id="@c.CategoryId">
+                        @Html.DisplayFor(modelItem => c.CategoryName)
+                    </a>
+
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
