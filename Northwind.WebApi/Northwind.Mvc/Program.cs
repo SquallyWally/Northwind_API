@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Northwind.Common.DataContext.SqlServer;
 using Northwind.Mvc.Data;
+
 //Pa$$w0rd
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,10 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SqlLiteConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
+
+// Northwind Connection with Datasbase contect from Northwind
+var sqlServerConnection = builder.Configuration.GetConnectionString("NorthwindConnection");
+builder.Services.AddNorthwindContext(sqlServerConnection);
+
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>() // Role management
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

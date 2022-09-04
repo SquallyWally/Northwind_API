@@ -52,10 +52,6 @@ public class CustomersController : Controller
     public async Task<IActionResult> Create([FromBody] Customer customer)
     {
         //null check -> Bad Request
-        if (customer == null)
-        {
-            return BadRequest();
-        }
 
         Customer? addedCustomer = await _repository.CreateAsync(customer);
 
@@ -81,7 +77,7 @@ public class CustomersController : Controller
         id = id.ToUpper();
         customer.CustomerId = customer.CustomerId.ToUpper();
 
-        if (customer == null || customer.CustomerId != id) return BadRequest();
+        if (customer.CustomerId != id) return BadRequest();
 
         Customer? existing = await _repository.RetrieveAsync(id);
         if (existing == null) return NotFound();
