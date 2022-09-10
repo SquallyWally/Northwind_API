@@ -9,6 +9,11 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <p class="alert alert-primary">@DateTime.Now.ToLongTimeString()</p>
+    <h3>Query for customers from a service</h3>
+    <form asp-action="Customers" method="get">
+        <input name="country" placeholder="Enter a country"/>
+        <input type="submit"/>
+    </form>
 </div>
 
 @if (Model is not null)

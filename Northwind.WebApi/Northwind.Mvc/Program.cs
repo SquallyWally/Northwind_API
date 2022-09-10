@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Northwind.Common.DataContext.SqlServer;
@@ -21,6 +22,14 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>() // Role management
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+// make calls with a named client to Web Api service using port 5002 and JSON request as the default response format
+builder.Services.AddHttpClient(name: "Northwind.WebApi", configureClient: options =>
+{
+    options.BaseAddress = new Uri("https://localhost:5002/");
+    options.DefaultRequestHeaders.Accept.Add(
+        item: new MediaTypeWithQualityHeaderValue(mediaType: "application/json", quality: 1.0));
+});
 
 
 builder.Services.AddControllersWithViews();

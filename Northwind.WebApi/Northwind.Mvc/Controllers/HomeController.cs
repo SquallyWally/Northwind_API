@@ -12,18 +12,21 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly NorthwindContext _db;
+    private readonly IHttpClientFactory _clientFactory;
 
-    public HomeController(ILogger<HomeController> logger, NorthwindContext injectionContext)
+    public HomeController(ILogger<HomeController> logger, NorthwindContext injectionContext,
+        IHttpClientFactory clientFactory)
     {
         _logger = logger;
         _db = injectionContext;
+        _clientFactory = clientFactory;
     }
 
     [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any)]
     public async Task<IActionResult> Index()
     {
-        _logger.LogError("This is a serious error (not really!)");
-        _logger.LogWarning("This is your first warning!");
+        // _logger.LogError("This is a serious error (not really!)");
+        // _logger.LogWarning("This is your first warning!");
 
         // Create an View model instance
         HomeIndexViewModel model = new(
@@ -86,7 +89,7 @@ public class HomeController : Controller
         ViewData["MaxPrice"] = price.Value.ToString("C");
         return View(model);
     }
-    
+
     [Route("category")]
     public async Task<IActionResult> Categories()
     {
@@ -95,7 +98,7 @@ public class HomeController : Controller
         {
             return NotFound("There are no Categories");
         }
-        
+
         return View(model);
     }
 
@@ -113,6 +116,31 @@ public class HomeController : Controller
         {
             return NotFound($"CategoryId {id} not found.");
         }
+
+        return View(model);
+    }
+
+    public async Task<IActionResult> Customers(string country)
+    {
+        string uri;
+        
+        if (string.IsNullOrEmpty(country))
+        {
+            ViewData["Title"] = "All Customers Worldwide";
+            uri = "api/customers/";
+        }
+        else
+        {
+            ViewData["Title"] = $"Customers in {country}";
+            uri = $"api/customers/?country={country}";
+        }
+
+        HttpClient client = _clientFactory.CreateClient(name: "Northwind.WebApi");
+        HttpRequestMessage request = new(method: HttpMethod.Get, requestUri: uri);
+
+        HttpResponseMessage response = await client.SendAsync(request);
+
+        IEnumerable<Customer>? model = await response.Content.ReadFromJsonAsync<IEnumerable<Customer>>();
 
         return View(model);
     }

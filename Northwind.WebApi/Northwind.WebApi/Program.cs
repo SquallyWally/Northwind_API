@@ -10,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddNorthwindContext();
 
+builder.WebHost.UseUrls("https://localhost:5002/");
+
 builder.Services.AddControllers(options =>
     {
         global::System.Console.WriteLine("Default output formatters:");
@@ -33,6 +35,7 @@ builder.Services.AddControllers(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddCors();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -52,6 +55,11 @@ builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseCors(configurePolicy: options =>
+{
+    options.WithMethods("GET", "POST", "PUT", "DELETE");
+    options.WithOrigins("https://localhost:5001"); // Allows requests from the MVC client
+});
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
