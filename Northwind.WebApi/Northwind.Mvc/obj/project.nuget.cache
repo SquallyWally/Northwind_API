@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "leFet8k8LppDMa4rQacAvgTMYb7SEZWMG1XLVpCDugTy68Y2TJ5XU6VYRcAZ1hSK2SZCA9W4Qun3+hq7/ENd1g==",
+  "dgSpecHash": "yibtQgc89BITYpIMV0V/I9VXo14012+ow7Wmp2zMaMSQV4GHslZGT+OXX2jDLk2bQpKJcm4dOa5t68fy70CQkg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mlk_s\\source\\repos\\Northwind\\Northwind.WebApi\\Northwind.Mvc\\Northwind.Mvc.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",

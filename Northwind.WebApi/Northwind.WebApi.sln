@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebApi", "Northwind.WebApi\Northwind.WebApi.csproj", "{3593B1DA-0085-48BE-A315-1CD8449B67A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.WebApi", "Northwind.WebApi\Northwind.WebApi.csproj", "{3593B1DA-0085-48BE-A315-1CD8449B67A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityModels.SqlServer", "..\Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{3E02D5C3-2295-4D64-BCA8-C695B9DA8902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.EntityModels.SqlServer", "..\Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{3E02D5C3-2295-4D64-BCA8-C695B9DA8902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", "..\Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{22DB4A3D-D85B-476B-85AF-5AAB00E2A08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.DataContext.SqlServer", "..\Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{22DB4A3D-D85B-476B-85AF-5AAB00E2A08D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc", "Northwind.Mvc\Northwind.Mvc.csproj", "{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Mvc", "Northwind.Mvc\Northwind.Mvc.csproj", "{07E3DAE3-86C1-4F21-8416-4D9F7699F2E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindTests", "NorthwindTests\NorthwindTests.csproj", "{C62521F9-8F76-4ECB-8508-39D58D31FE49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindTests", "NorthwindTests\NorthwindTests.csproj", "{C62521F9-8F76-4ECB-8508-39D58D31FE49}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2BCADF87-3B27-4489-9F00-9A1A5B81EC81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{C62521F9-8F76-4ECB-8508-39D58D31FE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C62521F9-8F76-4ECB-8508-39D58D31FE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C62521F9-8F76-4ECB-8508-39D58D31FE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BCADF87-3B27-4489-9F00-9A1A5B81EC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BCADF87-3B27-4489-9F00-9A1A5B81EC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BCADF87-3B27-4489-9F00-9A1A5B81EC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BCADF87-3B27-4489-9F00-9A1A5B81EC81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

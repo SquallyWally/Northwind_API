@@ -61,3 +61,4 @@ C:\Users\mlk_s\source\repos\Northwind\Northwind.WebApi\Northwind.WebApi\bin\Debu
 C:\Users\mlk_s\source\repos\Northwind\Northwind.WebApi\Northwind.WebApi\bin\Debug\net6.0\Northwind.Common.EntityModels.SqlServer.dll
 C:\Users\mlk_s\source\repos\Northwind\Northwind.WebApi\Northwind.WebApi\bin\Debug\net6.0\Northwind.Common.DataContext.SqlServer.pdb
 C:\Users\mlk_s\source\repos\Northwind\Northwind.WebApi\Northwind.WebApi\bin\Debug\net6.0\Northwind.Common.EntityModels.SqlServer.pdb
+C:\Users\mlk_s\source\repos\Northwind\Northwind.WebApi\Northwind.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll

@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.OpenApi.Models;
 using Northwind.Common.DataContext.SqlServer;
+using Northwind.Common.EntityModels.SqlServer;
 using Northwind.WebApi.Repositories;
 using Swashbuckle.AspNetCore.SwaggerUI;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -52,6 +52,8 @@ builder.Services.AddHttpLogging(options =>
 });
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
+builder.Services.AddHealthChecks().AddDbContextCheck<NorthwindContext>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -72,6 +74,8 @@ if (app.Environment.IsDevelopment())
             SubmitMethod.Get, SubmitMethod.Post, SubmitMethod.Put, SubmitMethod.Delete
         });
     });
+
+    app.UseHealthChecks(path: "/howdoyoufeel");
 }
 
 app.UseHttpsRedirection();

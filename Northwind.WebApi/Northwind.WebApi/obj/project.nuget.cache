@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ypo9aOzVIKpQQZsclPFy/3T9kCrOzITMJNYZlBhgfzcTVZShAKDr+5eIOA87pS5pMfosMv0KB0WOWe4WXZiRow==",
+  "dgSpecHash": "evWl0JA9JEvsWqL40a9EYyVmV66YS9ocM1PmBcxHOxRBdKatZC4gDPu3x3tXC9v2ciWg/NTiX16bel8RC3ZmXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mlk_s\\source\\repos\\Northwind\\Northwind.WebApi\\Northwind.WebApi\\Northwind.WebApi.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,11 @@
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\6.0.0\\microsoft.extensions.diagnostics.healthchecks.6.0.0.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\6.0.0\\microsoft.extensions.diagnostics.healthchecks.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.entityframeworkcore\\6.0.0\\microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.6.0.0.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
@@ -30,6 +35,7 @@
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\mlk_s\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",

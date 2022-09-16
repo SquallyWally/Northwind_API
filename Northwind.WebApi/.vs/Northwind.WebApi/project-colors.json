@@ -15,7 +15,32 @@
       "ProjectGuid": "22db4a3d-d85b-476b-85af-5aab00e2a08d",
       "DisplayName": "Northwind.Common.DataContext.SqlServer",
       "ColorIndex": 2
+    },
+    "07e3dae3-86c1-4f21-8416-4d9f7699f2e0": {
+      "ProjectGuid": "07e3dae3-86c1-4f21-8416-4d9f7699f2e0",
+      "DisplayName": "Northwind.Mvc",
+      "ColorIndex": 3
+    },
+    "c62521f9-8f76-4ecb-8508-39d58d31fe49": {
+      "ProjectGuid": "c62521f9-8f76-4ecb-8508-39d58d31fe49",
+      "DisplayName": "NorthwindTests",
+      "ColorIndex": 4
+    },
+    "cb76e878-d6a2-42c8-85f5-9926ed3d6830": {
+      "ProjectGuid": "cb76e878-d6a2-42c8-85f5-9926ed3d6830",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "2bcadf87-3b27-4489-9f00-9a1a5b81ec81": {
+      "ProjectGuid": "2bcadf87-3b27-4489-9f00-9a1a5b81ec81",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 7
 }
